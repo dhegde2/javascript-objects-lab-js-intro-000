@@ -1,11 +1,11 @@
 let recipes = {};
 function updateObjectWithKeyAndValue(object,key,value){
 let copy = Object.assign({}, object);
-copy.key = value;
+copy[key] = value;
 return copy;
 }
 function destructivelyUpdateObjectWithKeyAndValue(object,key,value){
-object.key = value;
+object[key] = value;
 return object;
 }
 function deleteFromObjectbyKey(object,key){
