@@ -13,8 +13,7 @@ let obj = Object.assign({}, object);
 delete obj[key];
 return obj;
 }
-function destructivelyDeleteFromObjectByKey(object,key){
-let copy = Object.assign({}, object);
-delete copy[key];
-return copy;
+function destructivelyDeleteFromObjectByKey(object, key){
+delete object[key]; 
+return object; 
 }
