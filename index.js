@@ -2,7 +2,7 @@ let recipes = {};
 function updateObjectWithKeyAndValue(object,key,value){
 let copy = Object.assign({}, object);
 copy.key = value;
-return obj;
+return copy;
 }
 function destructivelyUpdateObjectWithKeyAndValue(object,key,value){
 object.key = value;
